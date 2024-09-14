@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PharmacyWeb</title>
+    <link rel="stylesheet" href="screen_1.css">
+    
+</head>
+<body>
+
+<header>
+    <img src="https://uploads.turbologo.com/uploads/design/preview_image/888076/preview_image20210624-22420-18ijiu0.png" alt="Health Care">
+    
+</header>
+
+<nav>
+    <ul class="navig_disp">
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#catalogo">Catálogo</a></li>
+            <li><a href="#doctores">Doctores</a></li>
+            <li><a href="#reseñas">Reseñas</a></li>
+    </ul>
+    
+</nav>
+
+<div class="container" id="inicio">
+    <section class="inicio">
+        <h2>Bienvenido a PharmacyWeb</h2>
+        <img src="https://th.bing.com/th/id/OIG3.1d2iAzEArmePKcVMOsRz?pid=ImgGn" alt="Imagen de Medicina">
+        <p>En PharmacyWeb, encontrarás información detallada sobre una amplia gama de medicamentos, recomendaciones de doctores y reseñas de pacientes para ayudarte a tomar decisiones informadas sobre tu salud.</p>
+    </section>
+</div>
+
+<div class="container" id="catalogo">
+    <h2>Catálogo de Medicamentos</h2>
+    <div class="search-bar">
+        <input type="text" id="search" placeholder="Buscar medicamento..." onkeyup="buscarMedicamento()"> 
+    </div>
+    <div class="catalogo">
+        <div class="medicamento" id="med1">
+            <h3>Paracetamol</h3>
+            <img src="https://via.placeholder.com/300x200?text=Paracetamol" alt="Paracetamol">
+            <p><strong>Descripción:</strong> El paracetamol es un analgésico y antipirético utilizado para aliviar el dolor y reducir la fiebre.</p>
+        </div>
+        <div class="medicamento" id="med2">
+            <h3>Aspirina</h3>
+            <img src="https://via.placeholder.com/300x200?text=Aspirina" alt="Aspirina">
+            <p><strong>Descripción:</strong> La aspirina es un medicamento antiinflamatorio no esteroideo (AINE) utilizado para reducir la fiebre, el dolor y la inflamación.</p>
+        </div>
+        <div class="medicamento" id="med3">
+            <h3>Ibuprofeno</h3>
+            <img src="https://via.placeholder.com/300x200?text=Ibuprofeno" alt="Ibuprofeno">
+            <p><strong>Descripción:</strong> El ibuprofeno es un antiinflamatorio no esteroideo que se usa para reducir la fiebre, el dolor y la inflamación.</p>
+        </div>
+        <!-- Agrega los otros medicamentos aquí (de med4 a med30) siguiendo el mismo formato -->
+        <div class="medicamento" id="med4">
+            <h3>Amoxicilina</h3>
+            <img src="https://via.placeholder.com/300x200?text=Amoxicilina" alt="Amoxicilina">
+            <p><strong>Descripción:</strong> La amoxicilina es un antibiótico usado para tratar infecciones bacterianas.</p>
+        </div>
+        <div class="medicamento" id="med5">
+            <h3>Amoxicilina</h3>
+            <img src="https://via.placeholder.com/300x200?text=Amoxicilina" alt="Amoxicilina">
+            <p><strong>Descripción:</strong> La amoxicilina es un antibiótico usado para tratar infecciones bacterianas.</p>
+        </div>
+        <div class="medicamento" id="med6">
+            <h3>Amoxicilina</h3>
+            <img src="https://via.placeholder.com/300x200?text=Amoxicilina" alt="Amoxicilina">
+            <p><strong>Descripción:</strong> La amoxicilina es un antibiótico usado para tratar infecciones bacterianas.</p>
+        </div>
+        <div class="medicamento" id="med4">
+            <h3>Amoxicilina</h3>
+            <img src="https://via.placeholder.com/300x200?text=Amoxicilina" alt="Amoxicilina">
+            <p><strong>Descripción:</strong> La amoxicilina es un antibiótico usado para tratar infecciones bacterianas.</p>
+        </div>
+        <div class="medicamento" id="med4">
+            <h3>Amoxicilina</h3>
+            <img src="https://via.placeholder.com/300x200?text=Amoxicilina" alt="Amoxicilina">
+            <p><strong>Descripción:</strong> La amoxicilina es un antibiótico usado para tratar infecciones bacterianas.</p>
+        </div>
+        <div class="medicamento" id="med4">
+            <h3>Amoxicilina</h3>
+            <img src="https://via.placeholder.com/300x200?text=Amoxicilina" alt="Amoxicilina">
+            <p><strong>Descripción:</strong> La amoxicilina es un antibiótico usado para tratar infecciones bacterianas.</p>
+        </div>
+        <div class="medicamento" id="med4">
+            <h3>Amoxicilina</h3>
+            <img src="https://via.placeholder.com/300x200?text=Amoxicilina" alt="Amoxicilina">
+            <p><strong>Descripción:</strong> La amoxicilina es un antibiótico usado para tratar infecciones bacterianas.</p>  
+        </div>     
+    </div>
+</div>
+
+<div class="container" id="doctores">
+    <h2>Recomendaciones de Doctores</h2>
+    <div class="medicamento">
+        <h3>Dr. Juan Pérez</h3>
+        <p><strong>Especialidad:</strong> Medicina General</p>
+        <p><strong>Ubicación:</strong> Calle Falsa 123, Ciudad</p>
+        <p><strong>Contacto:</strong> (555) 123-4567</p>
+    </div>
+    <div class="medicamento">
+        <h3>Dra. Ana Gómez</h3>
+        <p><strong>Especialidad:</strong> Cardiología</p>
+        <p><strong>Ubicación:</strong> Avenida Siempre Viva 456, Ciudad</p>
+        <p><strong>Contacto:</strong> (555) 987-6543</p>
+    </div>
+</div>
+
+<div class="container" id="reseñas">
+    <h2>Reseñas de Pacientes</h2>
+    <div class="medicamento">
+        <h3>Maria López</h3>
+        <p><strong>Medicamento:</strong> Paracetamol</p>
+        <p><strong>Reseña:</strong> "El paracetamol me ha sido muy útil para aliviar dolores de cabeza y fiebre. Lo recomiendo para dolores leves."</p>
+    </div>
+    <div class="medicamento">
+        <h3>Carlos Fernández</h3>
+        <p><strong>Medicamento:</strong> Aspirina</p>
+        <p><strong>Reseña:</strong> "La aspirina es excelente para reducir fiebre y dolores musculares. Sin embargo, a veces me causa malestar estomacal."</p>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2024 PharmacyWeb. Todos los derechos reservados.</p>
+</footer>
+
+<script>
+function buscarMedicamento() {
+    const query = document.getElementById('search').value.toLowerCase();
+    const medicamentos = document.querySelectorAll('.medicamento');
+    medicamentos.forEach(medicamento => {
+        const title = medicamento.querySelector('h3').textContent.toLowerCase();
+        if (title.includes(query)) {
+            medicamento.style.display = 'block';
+        } else {
+            medicamento.style.display = 'none';
+        }
+    });
+}
+</script>
+
+</body>
+</html>

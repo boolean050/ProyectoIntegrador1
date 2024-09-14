@@ -1,0 +1,132 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    background-color: #ffffff;
+    
+    padding: 1em 0;
+    text-align: left;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: block; 
+    top: 0;
+    z-index: 1000;
+    
+    
+}
+img{
+    height: 130px;
+    
+}
+nav {
+    background-color: #343a40;
+    overflow: hidden;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    padding: 0;
+}
+
+nav a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+nav a:hover {
+    background-color: #495057;
+}
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+.inicio, .catalogo, .doctores, .reseñas {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    padding: 20px;
+}
+.inicio img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+.catalogo {
+    padding: 20px;
+    overflow-x: auto;
+    white-space: nowrap;
+    gap: 20px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+.search-bar {
+    margin-bottom: 20px;
+}
+.search-bar input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+.catalogo {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    padding: 10px;
+    gap: 20px;
+}
+.medicamento {
+    background-color: #e9ecef;
+    border-radius: 8px;
+    padding: 15px;
+    width: 300px;
+    flex-shrink: 0;
+    transition: transform 0.3s, box-shadow 0.3s;
+    box-sizing: border-box;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.medicamento img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+.medicamento h3 {
+    font-size: 18px;
+    margin-top: 0;
+}
+.medicamento p {
+    margin: 10px 0;
+    text-align: justify;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+}
+.medicamento:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+footer {
+    background-color: #007bff;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
