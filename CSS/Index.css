@@ -1,0 +1,404 @@
+/** PAGINA GENERAL */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;1,400&display=swap');
+
+* {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    scroll-behavior: smooth;
+    scroll-padding-top: 2rem;
+}
+
+body {
+    font-family: sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* ------------------------------------------------------ */
+
+/** PARTE DE BIENVENIDA SUPERIOR */
+.Inicio {
+    width: 100%;
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(17rem, 1fr));
+    align-items: center;
+    gap: 1.5rem;
+    margin-top: 40px;
+    background: var(--second-color);
+}
+
+.Inicio .Inicio-Imagen img{
+    border-radius: 10px;
+}
+
+.Inicio-Texto span {
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.Inicio-Texto h1 {
+    font-size: 3.4rem;
+    margin-bottom: 1rem;
+}
+
+
+.Boton {
+    padding: 0.7rem 1.2rem;
+    margin-top: 25px;
+    background: #025aa4;
+    color: var(--bg-color);
+    font-weight: 500;
+    display: inline-block;
+    text-transform: uppercase;
+    clip-path: polygon(100% 0, 93% 50%, 86% 99%, 0% 100%, 7% 47%, 13% 0%);
+}
+
+.Boton:hover {
+    letter-spacing: 2px;
+    transition: 0.2s;
+}
+
+img {
+    width: 100%;
+}
+
+section {
+    padding: 50px 100px;
+}
+
+/* ------------------------------------------------------ */
+
+/** PARTE DE ARTICULOS  */
+.Articulos {
+    width: 100%;
+    margin: 30px auto 0;
+    display: flex;
+    justify-content: center;
+}
+
+.list {
+    display: grid;
+    grid-template-columns: 350px 350px 350px;
+    column-gap: 120px;
+    margin-bottom: -50px;
+}
+
+.list .Imagenes img{
+    width: 200px;
+    height: 200px;
+    transition: 0.5s;
+}
+
+.list .Imagenes {
+    background-image: linear-gradient(to top right, #B6BBC4, #F0ECE5);
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+}
+
+.list .Info-Producto {
+    background-color: #ffffff24;
+    border-radius: 30px;
+    padding: 50px 30px;
+    transform: translate(0, -50px);
+    backdrop-filter: blur(20px);
+    color: var(--text-color);
+}
+
+.Nombre-Producto {
+    font-size: x-large;
+}
+
+.Producto{
+    height: 550px;
+}
+
+.Producto .Info-Producto .Descripcion {
+    opacity: .7;
+    margin: 10px 0;
+}
+
+.Producto .Info-Producto .Precio {
+    font-size: large;
+    letter-spacing: 3px;
+    margin-bottom: 10px;
+}
+
+.Producto .Info-Producto .Agregar{
+    background-color: #025aa4;
+    color: var(--bg-color);
+    padding: 20px;
+    width: 100%;
+    border: none;
+    border-radius: 30px;
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-weight: 500;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.Producto .Info-Producto .Agregar:hover{
+    transform: scale(1.1);
+}
+
+.Nuevo .Articulos .Producto:hover img {
+    transform: translate(0, -20px);
+}
+
+.Encabezado {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.Encabezado .Menu li {
+    cursor: pointer;
+    transition: color 0.3s;  /* Agrega transición para suavizar el cambio de color */
+}
+
+.Encabezado .Menu li:hover {
+    color: var(--main-color);  /* Cambia a tu color hover deseado */
+}
+
+.search-bar {
+    margin-bottom: 20px;
+}
+.search-bar input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+/* ------------------------------------------------------ */
+
+/** COMENTARIOS */
+#doctores{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+.recomendacion-doctores {
+    letter-spacing: 1px;
+    margin: 30px 0px;
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.recomendacion-doctores h1{
+    font-size: 2.2rem;
+    font-weight: 500;
+    background-color: #025aa4;
+    color: #ffffff;
+    padding: 10px 20px;
+}
+
+.recomendacion-doctores span{
+    font-size: 1.3rem;
+    color: #333;
+    margin-bottom: 10px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.recomendacion-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.recomendacion-box{
+    width: 500px;
+    box-shadow: 2px 2px 30px rgba(0,0,0,0.1);
+    background-color: #ffffff;
+    padding: 20px;
+    margin: 15px;
+    cursor: pointer;
+}
+
+.recomendacion-box:hover{
+    transform: translateY(-10px);
+    transition: all ease 0.3s;
+}
+
+.perfil-imagen{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 10px;
+}
+
+.perfil-imagen img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.perfil{
+    display: flex;
+    align-items: center;
+}
+
+.nombre-usuario{
+    display: flex;
+    flex-direction: column;
+}
+
+.nombre-usuario strong{
+    color: #3d3d3d;
+    font-size: 1.1rem;
+    letter-spacing: 0.5px;
+}
+
+.nombre-usuario span{
+    color: #979797;
+    font-size: 0.8rem;
+}
+
+.reviews{
+    color: #f9d71c;
+}
+
+.box-top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.comentarios p{
+    font-size: 0.9rem;
+    color: #4b4b4b;
+}
+
+#reseñas {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centra horizontalmente */
+    margin-top: -30px;
+    margin-bottom: 20px;
+}
+
+#Comentar {
+    padding: 10px 20px;
+    background-color: #025aa4;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 1rem;
+    cursor: pointer;
+    width: 30%;
+    transition: transform 0.3s ease;
+}
+
+
+
+#Comentar:hover{
+    transform: scale(1.1);
+}
+
+/* ------------------------------------------------------ */
+
+/** RESPONSIVE */
+@media(max-width: 1060px){
+    .recomendacion-box{
+        width: 45%;
+        padding: 10px;
+    }
+}
+
+@media(max-width: 960px) {
+    .Articulos .list {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .Articulos .list .Producto{
+        width: 70%;
+
+    }
+    .Articulos .list .Producto img{
+        width: 190px;
+        height: 180px;
+    }
+
+    #Comentar{
+        width: 50%;
+    }
+}
+
+@media(max-width: 790px){
+    .recomendacion-box{
+        width: 100%;
+    }
+    .recomendacion-doctores h1{
+        font-size: 1.4rem;
+    }
+}
+
+@media(max-width: 620px) {
+    .list .Info-Producto{
+        margin-top: 10px;
+    }
+
+    .Articulos .list .Producto img{
+        width: 150px;
+        height: 150px;
+    }
+
+    #Comentar{
+        width: 50%;
+    }
+}
+
+@media(max-width: 340px){
+    .box-top{
+        flex-wrap: wrap;
+        margin-bottom: 10px;
+    }
+
+    .reviews{
+        margin-top: 10px;
+    }
+    
+    #Comentar{
+        width: 50%;
+    }
+}

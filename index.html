@@ -3,13 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/bf924a6af6.js" crossorigin="anonymous"></script>
     <title>PharmacyWeb</title>
-    <link rel="stylesheet" href="screen_1.css">
-    
+    <link rel="stylesheet" href="CSS/Index.css">
+    <link rel="stylesheet" href="CSS/Header.css">
+    <link rel="stylesheet" href="CSS/Footer.css">
+
 </head>
 <body>
 <!--a.nav-link*3 forma mas rapida de crear elementos del HTML-->
-<header>
+<!-- <header> 
     <a href="#" class="logo">
         <img src="https://uploads.turbologo.com/uploads/design/preview_image/888076/preview_image20210624-22420-18ijiu0.png" alt="Health Care">
         <h2 class="nombre-empresa">Health Care</h2>
@@ -20,77 +23,394 @@
         <a href="" class="nav-link"> Contacto</a>
     </nav>
 </header>
+-->
+<header>
+    <a href="" class="Logo"> <i class="fa-solid fa-staff-snake" style="color: red;"></i></> PharmacyWeb</a>
+
+    <!-- MENU TEXTO -->
+    <ul class="Menu">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="#Productos">Productos</a></li>
+        <li><a href="About.html">Acerca de</a></li>
+        <li><a href="Contacto.html">Contacto</a></li>
+    </ul>
+
+    <!--  ICONOS MENU -->
+    <div class="Iconos">
+        <i class="fa-solid fa-bars" id="Icono-Menu"></i>
+        <i class="fa-solid fa-magnifying-glass" id="Icono-Buscar"></i>
+        <i class="fa-regular fa-user" id="Icono-Usuario"></i>
+    </div>
+
+    <!--  BUSCAR -->
+    <div class="Buscar">
+        <input type="search" name="" id="" placeholder="Buscas algo?">
+    </div>
+
+    <!-- USUARIO -->
+    <div class="Usuario">
+        <h2>Iniciar Sesión</h2>
+        <input type="email" placeholder="Ingresar Correo">
+        <input type="password" name="" id="" placeholder="Ingresar Clave">
+        <input type="submit" value="Iniciar Sesión" class="Login-btn">
+        <p>Olvidaste tu Clave? <a href="#">Restablecer ahora</a></p>
+        <p>No tienes una cuenta? <a href="#">Crea una</a></p>
+    </div>
 
 
-<div class="container" id="inicio">
+</header>
+
+<!-- <div class="container" id="inicio"> 
     <section class="inicio">
         <h2>Bienvenido a PharmacyWeb</h2>
         <img src="https://th.bing.com/th/id/OIG3.1d2iAzEArmePKcVMOsRz?pid=ImgGn" alt="Imagen de Medicina">
         <p>En PharmacyWeb, encontrarás información detallada sobre una amplia gama de medicamentos, recomendaciones de doctores y reseñas de pacientes para ayudarte a tomar decisiones informadas sobre tu salud.</p>
     </section>
 </div>
+-->
 
-<div class="container" id="catalogo">
-    <h2>Catálogo de Medicamentos</h2>
-    <div class="search-bar">
-        <input type="text" id="search" placeholder="Buscar medicamento..." onkeyup="buscarMedicamento()"> 
+<section class="Inicio" id="Inicio">
+    <div class="Inicio-Texto">
+        <h1>Bienvenido a <br>PharmacyWeb</h1>
+        <p>En PharmacyWeb, encontrarás información detallada sobre una amplia gama de medicamentos, recomendaciones de doctores y reseñas de pacientes para ayudarte a tomar decisiones informadas sobre tu salud.</p>
+        <a href="#" class="Boton">Más información</a>
     </div>
-    <div class="catalogo">
-        <div class="medicamento" id="med1">
-            <h3>Paracetamol</h3>
-            <img src="https://via.placeholder.com/300x200?text=Paracetamol" alt="Paracetamol">
-            <p><strong>Descripción:</strong> El paracetamol es un analgésico y antipirético utilizado para aliviar el dolor y reducir la fiebre.</p>
-        </div>
-        <div class="medicamento" id="med2">
-            <h3>Aspirina</h3>
-            <img src="https://via.placeholder.com/300x200?text=Aspirina" alt="Aspirina">
-            <p><strong>Descripción:</strong> La aspirina es un medicamento antiinflamatorio no esteroideo (AINE) utilizado para reducir la fiebre, el dolor y la inflamación.</p>
-        </div>
-        <div class="medicamento" id="med3">
-            <h3>Ibuprofeno</h3>
-            <img src="https://via.placeholder.com/300x200?text=Ibuprofeno" alt="Ibuprofeno">
-            <p><strong>Descripción:</strong> El ibuprofeno es un antiinflamatorio no esteroideo que se usa para reducir la fiebre, el dolor y la inflamación.</p>
-        </div>
-        <!-- Agrega los otros medicamentos aquí (de med4 a med30) siguiendo el mismo formato -->
-        <div class="medicamento" id="med4">
-            <h3>Amoxicilina</h3>
-            <img src="https://via.placeholder.com/300x200?text=Amoxicilina" alt="Amoxicilina">
-            <p><strong>Descripción:</strong> La amoxicilina es un antibiótico usado para tratar infecciones bacterianas.</p>
-        </div>
-        <div class="medicamento" id="med5">
-            <h3>Amoxicilina</h3>
-            <img src="https://via.placeholder.com/300x200?text=Amoxicilina" alt="Amoxicilina">
-            <p><strong>Descripción:</strong> La amoxicilina es un antibiótico usado para tratar infecciones bacterianas.</p>
-        </div>
-        <div class="medicamento" id="med6">
-            <h3>Amoxicilina</h3>
-            <img src="https://via.placeholder.com/300x200?text=Amoxicilina" alt="Amoxicilina">
-            <p><strong>Descripción:</strong> La amoxicilina es un antibiótico usado para tratar infecciones bacterianas.</p>
-        </div>
-        <div class="medicamento" id="med4">
-            <h3>Amoxicilina</h3>
-            <img src="https://via.placeholder.com/300x200?text=Amoxicilina" alt="Amoxicilina">
-            <p><strong>Descripción:</strong> La amoxicilina es un antibiótico usado para tratar infecciones bacterianas.</p>
-        </div>
-        <div class="medicamento" id="med4">
-            <h3>Amoxicilina</h3>
-            <img src="https://via.placeholder.com/300x200?text=Amoxicilina" alt="Amoxicilina">
-            <p><strong>Descripción:</strong> La amoxicilina es un antibiótico usado para tratar infecciones bacterianas.</p>
-        </div>
-        <div class="medicamento" id="med4">
-            <h3>Amoxicilina</h3>
-            <img src="https://via.placeholder.com/300x200?text=Amoxicilina" alt="Amoxicilina">
-            <p><strong>Descripción:</strong> La amoxicilina es un antibiótico usado para tratar infecciones bacterianas.</p>
-        </div>
-        <div class="medicamento" id="med4">
-            <h3>Amoxicilina</h3>
-            <img src="https://via.placeholder.com/300x200?text=Amoxicilina" alt="Amoxicilina">
-            <p><strong>Descripción:</strong> La amoxicilina es un antibiótico usado para tratar infecciones bacterianas.</p>  
-        </div>     
+    <div class="Inicio-Imagen">
+        <img src="https://th.bing.com/th/id/OIG3.1d2iAzEArmePKcVMOsRz?pid=ImgGn" alt="Imagen de Medicina">
     </div>
-</div>
+</section>
 
-<div class="container" id="doctores">
+<section class="Nuevo" id="Nuevo">
+    <div class="container" id="catalogo">
+        <h2>Catálogo de Medicamentos</h2>
+        <div class="search-bar">
+            <input type="text" id="search" placeholder="Buscar medicamento..." onkeyup="buscarMedicamento()"> 
+        </div>
+    
+        <div class="Encabezado">
+            <!-- LIST PAGE -->
+            <ul class="Menu"> 
+    
+            </ul>
+        </div>
+    
+        <div class="Articulos">
+            <div class="list">
+                <div class="Producto">
+                    <div class="Imagenes">
+                        <img src="Images/Producto1.png" alt="">
+                    </div>
+                    <!-- CONTENT -->
+                    <div class="Info-Producto"> 
+                        <div class="Nombre-Producto">Tenis Vans 1</div>
+                        <div class="Descripcion">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos est eveniet dicta. Magnam ea, at quam nulla illo alias vero, explicabo inventore consequatur vel necessitatibus aperiam. Sit sint ipsum quisquam.
+                        </div>
+                        <div class="Precio">$1,200</div>
+                        <button class="Agregar">Agregar al carrito</button>
+                    </div>
+                </div>
+    
+                <div class="Producto">
+                    <div class="Imagenes">
+                        <img src="Images/Producto1.png" alt="">
+                    </div>
+                    <div class="Info-Producto">
+                        <div class="Nombre-Producto">Tenis Vans 2</div>
+                        <div class="Descripcion">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos est eveniet dicta. Magnam ea, at quam nulla illo alias vero, explicabo inventore consequatur vel necessitatibus aperiam. Sit sint ipsum quisquam.
+                        </div>
+                        <div class="Precio">$1,200</div>
+                        <button class="Agregar">Agregar al carrito</button>
+                    </div>
+                </div>
+    
+                <div class="Producto">
+                    <div class="Imagenes">
+                        <img src="Images/Producto1.png" alt="">
+                    </div>
+                    <div class="Info-Producto">
+                        <div class="Nombre-Producto">Tenis Vans 3</div>
+                        <div class="Descripcion">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos est eveniet dicta. Magnam ea, at quam nulla illo alias vero, explicabo inventore consequatur vel necessitatibus aperiam. Sit sint ipsum quisquam.
+                        </div>
+                        <div class="Precio">$1,200</div>
+                        <button class="Agregar">Agregar al carrito</button>
+                    </div>
+                </div>
+    
+                <div class="Producto">
+                    <div class="Imagenes">
+                        <img src="Images/Producto1.png" alt="">
+                    </div>
+                    <div class="Info-Producto">
+                        <div class="Nombre-Producto">Tenis Vans 4</div>
+                        <div class="Descripcion">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos est eveniet dicta. Magnam ea, at quam nulla illo alias vero, explicabo inventore consequatur vel necessitatibus aperiam. Sit sint ipsum quisquam.
+                        </div>
+                        <div class="Precio">$1,200</div>
+                        <button class="Agregar">Agregar al carrito</button>
+                    </div>
+                </div>
+    
+                <div class="Producto">
+                    <div class="Imagenes">
+                        <img src="Images/Producto1.png" alt="">
+                    </div>
+                    <div class="Info-Producto">
+                        <div class="Nombre-Producto">Tenis Vans 5</div>
+                        <div class="Descripcion">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos est eveniet dicta. Magnam ea, at quam nulla illo alias vero, explicabo inventore consequatur vel necessitatibus aperiam. Sit sint ipsum quisquam.
+                        </div>
+                        <div class="Precio">$1,200</div>
+                        <button class="Agregar">Agregar al carrito</button>
+                    </div>
+                </div>
+    
+                <div class="Producto">
+                    <div class="Imagenes">
+                        <img src="Images/Producto1.png" alt="">
+                    </div>
+                    <div class="Info-Producto">
+                        <div class="Nombre-Producto">Tenis Vans 6</div>
+                        <div class="Descripcion">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos est eveniet dicta. Magnam ea, at quam nulla illo alias vero, explicabo inventore consequatur vel necessitatibus aperiam. Sit sint ipsum quisquam.
+                        </div>
+                        <div class="Precio">$1,200</div>
+                        <button class="Agregar">Agregar al carrito</button>
+                    </div>
+                </div>
+    
+                <div class="Producto">
+                    <div class="Imagenes">
+                        <img src="Images/Producto2.png" alt="">
+                    </div>
+                    <div class="Info-Producto">
+                        <div class="Nombre-Producto">Tenis Vans 7</div>
+                        <div class="Descripcion">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos est eveniet dicta. Magnam ea, at quam nulla illo alias vero, explicabo inventore consequatur vel necessitatibus aperiam. Sit sint ipsum quisquam.
+                        </div>
+                        <div class="Precio">$1,200</div>
+                        <button class="Agregar">Agregar al carrito</button>
+                    </div>
+                </div>
+    
+                <div class="Producto">
+                    <div class="Imagenes">
+                        <img src="Images/Producto2.png" alt="">
+                    </div>
+                    <div class="Info-Producto">
+                        <div class="Nombre-Producto">Tenis Vans 8</div>
+                        <div class="Descripcion">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos est eveniet dicta. Magnam ea, at quam nulla illo alias vero, explicabo inventore consequatur vel necessitatibus aperiam. Sit sint ipsum quisquam.
+                        </div>
+                        <div class="Precio">$1,200</div>
+                        <button class="Agregar">Agregar al carrito</button>
+                    </div>
+                </div>
+    
+                <div class="Producto">
+                    <div class="Imagenes">
+                        <img src="Images/Producto2.png" alt="">
+                    </div>
+                    <div class="Info-Producto">
+                        <div class="Nombre-Producto">Tenis Vans 9</div>
+                        <div class="Descripcion">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos est eveniet dicta. Magnam ea, at quam nulla illo alias vero, explicabo inventore consequatur vel necessitatibus aperiam. Sit sint ipsum quisquam.
+                        </div>
+                        <div class="Precio">$1,200</div>
+                        <button class="Agregar">Agregar al carrito</button>
+                    </div>
+                </div>
+    
+                <div class="Producto">
+                    <div class="Imagenes">
+                        <img src="Images/Producto2.png" alt="">
+                    </div>
+                    <div class="Info-Producto">
+                        <div class="Nombre-Producto">Tenis Vans 10</div>
+                        <div class="Descripcion">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos est eveniet dicta. Magnam ea, at quam nulla illo alias vero, explicabo inventore consequatur vel necessitatibus aperiam. Sit sint ipsum quisquam.
+                        </div>
+                        <div class="Precio">$1,200</div>
+                        <button class="Agregar">Agregar al carrito</button>
+                    </div>
+                </div>
+    
+                <div class="Producto">
+                    <div class="Imagenes">
+                        <img src="Images/Producto2.png" alt="">
+                    </div>
+                    <div class="Info-Producto">
+                        <div class="Nombre-Producto">Tenis Vans 11</div>
+                        <div class="Descripcion">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos est eveniet dicta. Magnam ea, at quam nulla illo alias vero, explicabo inventore consequatur vel necessitatibus aperiam. Sit sint ipsum quisquam.
+                        </div>
+                        <div class="Precio">$1,200</div>
+                        <button class="Agregar">Agregar al carrito</button>
+                    </div>
+                </div>
+    
+                <div class="Producto">
+                    <div class="Imagenes">
+                        <img src="Images/Producto2.png" alt="">
+                    </div>
+                    <div class="Info-Producto">
+                        <div class="Nombre-Producto">Tenis Vans 12</div>
+                        <div class="Descripcion">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos est eveniet dicta. Magnam ea, at quam nulla illo alias vero, explicabo inventore consequatur vel necessitatibus aperiam. Sit sint ipsum quisquam.
+                        </div>
+                        <div class="Precio">$1,200</div>
+                        <button class="Agregar">Agregar al carrito</button>
+                    </div>
+                </div>
+    
+                <div class="Producto">
+                    <div class="Imagenes">
+                        <img src="Images/Producto3.png" alt="">
+                    </div>
+                    <div class="Info-Producto">
+                        <div class="Nombre-Producto">Tenis Vans 13</div>
+                        <div class="Descripcion">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos est eveniet dicta. Magnam ea, at quam nulla illo alias vero, explicabo inventore consequatur vel necessitatibus aperiam. Sit sint ipsum quisquam.
+                        </div>
+                        <div class="Precio">$1,200</div>
+                        <button class="Agregar">Agregar al carrito</button>
+                    </div>
+                </div>
+    
+                <div class="Producto">
+                    <div class="Imagenes">
+                        <img src="Images/Producto3.png" alt="">
+                    </div>
+                    <div class="Info-Producto">
+                        <div class="Nombre-Producto">Tenis Vans 14</div>
+                        <div class="Descripcion">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos est eveniet dicta. Magnam ea, at quam nulla illo alias vero, explicabo inventore consequatur vel necessitatibus aperiam. Sit sint ipsum quisquam.
+                        </div>
+                        <div class="Precio">$1,200</div>
+                        <button class="Agregar">Agregar al carrito</button>
+                    </div>
+                </div>
+    
+                <div class="Producto">
+                    <div class="Imagenes">
+                        <img src="Images/Producto3.png" alt="">
+                    </div>
+                    <div class="Info-Producto">
+                        <div class="Nombre-Producto">Tenis Vans 15</div>
+                        <div class="Descripcion">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos est eveniet dicta. Magnam ea, at quam nulla illo alias vero, explicabo inventore consequatur vel necessitatibus aperiam. Sit sint ipsum quisquam.
+                        </div>
+                        <div class="Precio">$1,200</div>
+                        <button class="Agregar">Agregar al carrito</button>
+                    </div>
+                </div>
+    
+                <div class="Producto">
+                    <div class="Imagenes">
+                        <img src="Images/Producto3.png" alt="">
+                    </div>
+                    <div class="Info-Producto">
+                        <div class="Nombre-Producto">Tenis Vans 16</div>
+                        <div class="Descripcion">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos est eveniet dicta. Magnam ea, at quam nulla illo alias vero, explicabo inventore consequatur vel necessitatibus aperiam. Sit sint ipsum quisquam.
+                        </div>
+                        <div class="Precio">$1,200</div>
+                        <button class="Agregar">Agregar al carrito</button>
+                    </div>
+                </div>
+    
+                <div class="Producto">
+                    <div class="Imagenes">
+                        <img src="Images/Producto3.png" alt="">
+                    </div>
+                    <div class="Info-Producto">
+                        <div class="Nombre-Producto">Tenis Vans 17</div>
+                        <div class="Descripcion">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos est eveniet dicta. Magnam ea, at quam nulla illo alias vero, explicabo inventore consequatur vel necessitatibus aperiam. Sit sint ipsum quisquam.
+                        </div>
+                        <div class="Precio">$1,200</div>
+                        <button class="Agregar">Agregar al carrito</button>
+                    </div>
+                </div>
+    
+                <div class="Producto">
+                    <div class="Imagenes">
+                        <img src="Images/Producto3.png" alt="">
+                    </div>
+                    <div class="Info-Producto">
+                        <div class="Nombre-Producto">Tenis Vans 18</div>
+                        <div class="Descripcion">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos est eveniet dicta. Magnam ea, at quam nulla illo alias vero, explicabo inventore consequatur vel necessitatibus aperiam. Sit sint ipsum quisquam.
+                        </div>
+                        <div class="Precio">$1,200</div>
+                        <button class="Agregar">Agregar al carrito</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--  
+        <div class="catalogo">
+            <div class="medicamento" id="med1">
+                <h3>Paracetamol</h3>
+                <img src="https://via.placeholder.com/300x200?text=Paracetamol" alt="Paracetamol">
+                <p><strong>Descripción:</strong> El paracetamol es un analgésico y antipirético utilizado para aliviar el dolor y reducir la fiebre.</p>
+            </div>
+            <div class="medicamento" id="med2">
+                <h3>Aspirina</h3>
+                <img src="https://via.placeholder.com/300x200?text=Aspirina" alt="Aspirina">
+                <p><strong>Descripción:</strong> La aspirina es un medicamento antiinflamatorio no esteroideo (AINE) utilizado para reducir la fiebre, el dolor y la inflamación.</p>
+            </div>
+            <div class="medicamento" id="med3">
+                <h3>Ibuprofeno</h3>
+                <img src="https://via.placeholder.com/300x200?text=Ibuprofeno" alt="Ibuprofeno">
+                <p><strong>Descripción:</strong> El ibuprofeno es un antiinflamatorio no esteroideo que se usa para reducir la fiebre, el dolor y la inflamación.</p>
+            </div>
+            <!-- Agrega los otros medicamentos aquí (de med4 a med30) siguiendo el mismo formato 
+            <div class="medicamento" id="med4">
+                <h3>Amoxicilina</h3>
+                <img src="https://via.placeholder.com/300x200?text=Amoxicilina" alt="Amoxicilina">
+                <p><strong>Descripción:</strong> La amoxicilina es un antibiótico usado para tratar infecciones bacterianas.</p>
+            </div>
+            <div class="medicamento" id="med5">
+                <h3>Amoxicilina</h3>
+                <img src="https://via.placeholder.com/300x200?text=Amoxicilina" alt="Amoxicilina">
+                <p><strong>Descripción:</strong> La amoxicilina es un antibiótico usado para tratar infecciones bacterianas.</p>
+            </div>
+            <div class="medicamento" id="med6">
+                <h3>Amoxicilina</h3>
+                <img src="https://via.placeholder.com/300x200?text=Amoxicilina" alt="Amoxicilina">
+                <p><strong>Descripción:</strong> La amoxicilina es un antibiótico usado para tratar infecciones bacterianas.</p>
+            </div>
+            <div class="medicamento" id="med4">
+                <h3>Amoxicilina</h3>
+                <img src="https://via.placeholder.com/300x200?text=Amoxicilina" alt="Amoxicilina">
+                <p><strong>Descripción:</strong> La amoxicilina es un antibiótico usado para tratar infecciones bacterianas.</p>
+            </div>
+            <div class="medicamento" id="med4">
+                <h3>Amoxicilina</h3>
+                <img src="https://via.placeholder.com/300x200?text=Amoxicilina" alt="Amoxicilina">
+                <p><strong>Descripción:</strong> La amoxicilina es un antibiótico usado para tratar infecciones bacterianas.</p>
+            </div>
+            <div class="medicamento" id="med4">
+                <h3>Amoxicilina</h3>
+                <img src="https://via.placeholder.com/300x200?text=Amoxicilina" alt="Amoxicilina">
+                <p><strong>Descripción:</strong> La amoxicilina es un antibiótico usado para tratar infecciones bacterianas.</p>
+            </div>
+            <div class="medicamento" id="med4">
+                <h3>Amoxicilina</h3>
+                <img src="https://via.placeholder.com/300x200?text=Amoxicilina" alt="Amoxicilina">
+                <p><strong>Descripción:</strong> La amoxicilina es un antibiótico usado para tratar infecciones bacterianas.</p>  
+            </div>     
+        </div>
+        -->
+    </div>
+</section>
+
+
+
+<!-- <div class="container" id="doctores">
     <h2>Recomendaciones de Doctores</h2>
     <div class="medicamento">
         <h3>Dr. Juan Pérez</h3>
@@ -104,25 +424,314 @@
         <p><strong>Ubicación:</strong> Avenida Siempre Viva 456, Ciudad</p>
         <p><strong>Contacto:</strong> (555) 987-6543</p>
     </div>
+</div> -->
+
+<div class="container" id="doctores">
+    <div class="recomendacion-doctores">
+        <span>Lo que dicen los profesionales</span>
+        <h1>Recomendaciones de Doctores</h1>
+    </div>
+
+    <div class="recomendacion-container">
+
+        <!--* COMENTARIO 1 -->
+        <div class="recomendacion-box">
+            <div class="box-top">
+                <div class="perfil">
+                    <div class="perfil-imagen">
+                        <img src="#" alt="imagen">
+                    </div>
+                    <div class="nombre-usuario">
+                        <strong>Jesus Rodriguez</strong>
+                        <span>@jesus.rdgz</span>
+                    </div>
+                </div>
+
+                <div class="reviews">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i> <!--  Estrella vacia -->
+                </div>
+
+            </div>
+
+            <div class="comentarios">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repudiandae fugit, eligendi sed natus omnis aliquam architecto laborum aut fuga sint accusamus inventore ea ab, adipisci, quod amet. Eos, hic facere!</p>
+            </div>
+
+        </div>
+<!-- ---------------------- -->
+
+        <!--* COMENTARIO 2 -->
+        <div class="recomendacion-box">
+            <div class="box-top">
+                <div class="perfil">
+                    <div class="perfil-imagen">
+                        <img src="#" alt="imagen">
+                    </div>
+                    <div class="nombre-usuario">
+                        <strong>Jesus Rodriguez</strong>
+                        <span>@jesus.rdgz</span>
+                    </div>
+                </div>
+
+                <div class="reviews">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i> <!--  Estrella vacia -->
+                </div>
+
+            </div>
+
+            <div class="comentarios">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repudiandae fugit, eligendi sed natus omnis aliquam architecto laborum aut fuga sint accusamus inventore ea ab, adipisci, quod amet. Eos, hic facere!</p>
+            </div>
+
+        </div>
+<!-- ---------------------- -->
+
+        <!--* COMENTARIO 3 -->
+        <div class="recomendacion-box">
+            <div class="box-top">
+                <div class="perfil">
+                    <div class="perfil-imagen">
+                        <img src="#" alt="imagen">
+                    </div>
+                    <div class="nombre-usuario">
+                        <strong>Jesus Rodriguez</strong>
+                        <span>@jesus.rdgz</span>
+                    </div>
+                </div>
+
+                <div class="reviews">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i> <!--  Estrella vacia -->
+                </div>
+
+            </div>
+
+            <div class="comentarios">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repudiandae fugit, eligendi sed natus omnis aliquam architecto laborum aut fuga sint accusamus inventore ea ab, adipisci, quod amet. Eos, hic facere!</p>
+            </div>
+
+        </div>
+<!-- ---------------------- -->
+
+        <!--* COMENTARIO 4 -->
+        <div class="recomendacion-box">
+            <div class="box-top">
+                <div class="perfil">
+                    <div class="perfil-imagen">
+                        <img src="#" alt="imagen">
+                    </div>
+                    <div class="nombre-usuario">
+                        <strong>Jesus Rodriguez</strong>
+                        <span>@jesus.rdgz</span>
+                    </div>
+                </div>
+
+                <div class="reviews">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i> <!--  Estrella vacia -->
+                </div>
+
+            </div>
+
+            <div class="comentarios">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repudiandae fugit, eligendi sed natus omnis aliquam architecto laborum aut fuga sint accusamus inventore ea ab, adipisci, quod amet. Eos, hic facere!</p>
+            </div>
+
+        </div>
+<!-- ---------------------- -->
+    </div>
+
 </div>
 
 <div class="container" id="reseñas">
-    <h2>Reseñas de Pacientes</h2>
-    <div class="medicamento">
-        <h3>Maria López</h3>
-        <p><strong>Medicamento:</strong> Paracetamol</p>
-        <p><strong>Reseña:</strong> "El paracetamol me ha sido muy útil para aliviar dolores de cabeza y fiebre. Lo recomiendo para dolores leves."</p>
+    <div class="recomendacion-doctores">
+        <span>Comentarios</span>
+        <h1>Reseñas de Clientes</h1>
     </div>
-    <div class="medicamento">
-        <h3>Carlos Fernández</h3>
-        <p><strong>Medicamento:</strong> Aspirina</p>
-        <p><strong>Reseña:</strong> "La aspirina es excelente para reducir fiebre y dolores musculares. Sin embargo, a veces me causa malestar estomacal."</p>
+
+    <div class="recomendacion-container">
+
+        <!--* COMENTARIO 1 -->
+        <div class="recomendacion-box">
+            <div class="box-top">
+                <div class="perfil">
+                    <div class="perfil-imagen">
+                        <img src="#" alt="imagen">
+                    </div>
+                    <div class="nombre-usuario">
+                        <strong>Jesus Rodriguez</strong>
+                        <span>@jesus.rdgz</span>
+                    </div>
+                </div>
+
+                <div class="reviews">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i> <!--  Estrella vacia -->
+                </div>
+
+            </div>
+
+            <div class="comentarios">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repudiandae fugit, eligendi sed natus omnis aliquam architecto laborum aut fuga sint accusamus inventore ea ab, adipisci, quod amet. Eos, hic facere!</p>
+            </div>
+
+        </div>
+<!-- ---------------------- -->
+
+        <!--* COMENTARIO 2 -->
+        <div class="recomendacion-box">
+            <div class="box-top">
+                <div class="perfil">
+                    <div class="perfil-imagen">
+                        <img src="#" alt="imagen">
+                    </div>
+                    <div class="nombre-usuario">
+                        <strong>Jesus Rodriguez</strong>
+                        <span>@jesus.rdgz</span>
+                    </div>
+                </div>
+
+                <div class="reviews">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i> <!--  Estrella vacia -->
+                </div>
+
+            </div>
+
+            <div class="comentarios">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repudiandae fugit, eligendi sed natus omnis aliquam architecto laborum aut fuga sint accusamus inventore ea ab, adipisci, quod amet. Eos, hic facere!</p>
+            </div>
+
+        </div>
+<!-- ---------------------- -->
+
+        <!--* COMENTARIO 3 -->
+        <div class="recomendacion-box">
+            <div class="box-top">
+                <div class="perfil">
+                    <div class="perfil-imagen">
+                        <img src="#" alt="imagen">
+                    </div>
+                    <div class="nombre-usuario">
+                        <strong>Jesus Rodriguez</strong>
+                        <span>@jesus.rdgz</span>
+                    </div>
+                </div>
+
+                <div class="reviews">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i> <!--  Estrella vacia -->
+                </div>
+
+            </div>
+
+            <div class="comentarios">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repudiandae fugit, eligendi sed natus omnis aliquam architecto laborum aut fuga sint accusamus inventore ea ab, adipisci, quod amet. Eos, hic facere!</p>
+            </div>
+
+        </div>
+<!-- ---------------------- -->
+
+        <!--* COMENTARIO 4 -->
+        <div class="recomendacion-box">
+            <div class="box-top">
+                <div class="perfil">
+                    <div class="perfil-imagen">
+                        <img src="#" alt="imagen">
+                    </div>
+                    <div class="nombre-usuario">
+                        <strong>Jesus Rodriguez</strong>
+                        <span>@jesus.rdgz</span>
+                    </div>
+                </div>
+
+                <div class="reviews">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i> <!--  Estrella vacia -->
+                </div>
+
+            </div>
+
+            <div class="comentarios">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repudiandae fugit, eligendi sed natus omnis aliquam architecto laborum aut fuga sint accusamus inventore ea ab, adipisci, quod amet. Eos, hic facere!</p>
+            </div>
+
+        </div>
+<!-- ---------------------- -->
     </div>
+    <button id="Comentar">Agregar comentario</button>
 </div>
 
-<footer>
+<footer id="Contacto" class="Contacto">
+    <div class="Contacto-Informacion">
+        <div class="Row">
+            <div class="Col">
+                <h4>Empresa</h4>
+                <ul>
+                    <li><a href="About.html">Acerca de</a></li>
+                    <li><a href="#">Politica de privacidad</a></li>
+                    <li><a href="#">Términos y Condiciones</a></li>
+                </ul>
+            </div>
+            <div class="Col">
+                <h4>Ayuda</h4>
+                <ul>
+                    <li><a href="Contacto.html">Contacto</a></li>
+                    <li><a href="#">Preguntas Frecuentes</a></li>
+                    <li><a href="#">Blog</a></li>
+                </ul>
+            </div>
+            <div class="Col">
+                <h4>Tienda</h4>
+                <ul>
+                    <li><a href="#">Salud</a></li>
+                    <li><a href="#">Bebidas</a></li>
+                    <li><a href="#">Higiene y Belleza</a></li>
+                    <li><a href="#">Bebés</a></li>
+                    <li><a href="#">Alimentos</a></li>
+                </ul>
+            </div>
+            <div class="Col">
+                <h4>Siguenos en Redes</h4>
+                <div class="Redes">
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+                    <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
     <p>&copy; 2024 PharmacyWeb. Todos los derechos reservados.</p>
 </footer>
+
+
 
 <script>
 function buscarMedicamento() {
@@ -138,6 +747,7 @@ function buscarMedicamento() {
     });
 }
 </script>
+<script src="JS/Index.js"></script>
 
 </body>
 </html>
